@@ -33,7 +33,7 @@ updates:
 
   # Maintain dependencies for docker
   - package-ecosystem: "docker"
-    directory: "/docker"
+    directory: "/docker/*"
     schedule:
       interval: "weekly"
       day: "monday"
