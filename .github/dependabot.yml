@@ -12,7 +12,7 @@ updates:
     groups:
       all-actions:
         patterns: [ "*" ]
-  
+
   # Maintain dependencies for Python packages
   - package-ecosystem: "pip"
     directory: "/oidc-controller"
@@ -21,6 +21,9 @@ updates:
       day: "monday"
       time: "04:00"
       timezone: "Canada/Pacific"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major", "version-update:semver-patch"]
 
   # Maintain dependencies for Vue
   - package-ecosystem: "npm"
@@ -30,6 +33,9 @@ updates:
       day: "monday"
       time: "04:00"
       timezone: "Canada/Pacific"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major", "version-update:semver-patch"]
 
   # Maintain dependencies for Vue
   - package-ecosystem: "npm"
@@ -39,6 +45,9 @@ updates:
       day: "monday"
       time: "04:00"
       timezone: "Canada/Pacific"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major", "version-update:semver-patch"]
 
   # Maintain dependencies for docker
   - package-ecosystem: "docker"
@@ -48,7 +57,10 @@ updates:
       day: "monday"
       time: "04:00"
       timezone: "Canada/Pacific"
-        
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major", "version-update:semver-patch"]
+
     # Maintain dependencies for docker
   - package-ecosystem: "docker"
     directory: "/demo/vue"
@@ -57,3 +69,6 @@ updates:
       day: "monday"
       time: "04:00"
       timezone: "Canada/Pacific"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major", "version-update:semver-patch"]
